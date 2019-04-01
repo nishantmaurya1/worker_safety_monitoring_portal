@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(212, 230, 236) !important;
+}
+.navbar-default {
+  
+  background-color:#054b96;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+ .navbar-nav > li{
+    
+    padding-right:10px;
+
+
+  }
+ 
+  .buttonload
+  {
+    background-color: #4CAF50; /* Green background */
+  border-radius:8px; /* Remove borders */
+  color: white; /* White text */
+  padding: 8px 12px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  float: right;
+  }
+  .form-align
+  {
+    padding:10px;
+   
+  }
+  .colorr
+  {
+      color:white;
+  }
+  .btn-primary
+  {
+    background-color:#054b96;
+  }
+  
+
+  .quadrat{
+    width: 50px;
+    height: auto;
+    -webkit-animation: NAME-YOUR-ANIMATION 1s infinite;  /* Safari 4+ */
+    -moz-animation: NAME-YOUR-ANIMATION 1s infinite;  /* Fx 5+ */
+    -o-animation: NAME-YOUR-ANIMATION 1s infinite;  /* Opera 12+ */
+    animation: NAME-YOUR-ANIMATION 1s infinite;  /* IE 10+, Fx 29+ */
+  }
+  
+  @-webkit-keyframes NAME-YOUR-ANIMATION {
+    0%, 49% {
+      background-color: rgb(147, 155, 143);
+      border: 2px solid #e50000;
+    }
+    50%, 100% {
+      background-color: #e50000;
+      border: 2px solid rgb(159, 167, 155);
+    }
+  }
