@@ -10,6 +10,11 @@ $('#loading').show();
 $('#load_results').load('worker.php', function() {$('#loading').hide();}).fadeIn("slow");
 }, 3000); // refresh every 10000 milliseconds
 
+function clickme()
+    {
+    var status = $(this).attr('id');
+    alert(status);
+}
 </script>
 
   <?php include 'header.php';?>
