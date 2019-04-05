@@ -23,12 +23,13 @@ $characters = json_decode($data); // decode the JSON feed
                                             
                                            
                                                 <div class="row">
+  
 
 <?php foreach ($characters as $character) : 
     if ($character->compliance>"40") {
     ?>
   
-                    <div class="col-md-3">
+                    <div class="col-md-3" id=<?php echo $character->rfid;?> onclick="clickme()">
                            <div class="card" style="border-radius:8px;">
                                 <div class="card-header" style="text-align: center">
                                          <h4> <?php echo $character->name;?></h4>
@@ -39,7 +40,7 @@ $characters = json_decode($data); // decode the JSON feed
                                                   <div class="col-md-4"><img src="images/male.png" class="img-responsive"  width="180%">
                                                    </div>
                                                         <div class=" col-md-8">
-                                                                <center>  <h4>Compliance - <?php echo $character->compliance;?> % <br><br>RFID-1543-002194</h4>
+                                                                <center>  <h4>Compliance - <?php echo $character->compliance;?> % <br><br>RFID-1543-<?php echo $character->rfid;?></h4>
                                                                 </center>
                                                          </div>  
                                               </div>
@@ -49,7 +50,7 @@ $characters = json_decode($data); // decode the JSON feed
                             </div>              
    <?php } else { ?>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id=<?php echo $character->rfid;?>>
                           <div class="card" style="border-radius:8px;">
                                 <div class="card-header" style="text-align: center">
                                       <h4><?php echo $character->name;?></h4>
@@ -59,7 +60,7 @@ $characters = json_decode($data); // decode the JSON feed
                                         <div class="col-md-4"><img src="images/male.png" class="img-responsive" width="180%">
                                         </div>
                                         <div class="quadrat col-md-8" >
-                                                <center><h4>Compliance - <?php echo $character->compliance;?>%<br>RFID-1543-002194</h4>
+                                                <center><h4>Compliance - <?php echo $character->compliance;?>%<br>RFID-1543-<?php echo $character->rfid;?></h4>
                                                 </center>
                                         </div>  
                                     </div>

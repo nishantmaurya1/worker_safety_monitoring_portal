@@ -1,3 +1,11 @@
+<?php 	session_start();
+    if ($_SESSION["Login"]!== "YES") 
+        {
+         
+         // sleep(5);    //if i don't wanna show this page's content to user.
+          header('location:authenticate.php');
+
+        }  ?>
 <html>
     <head>
         <title>Tracker | Worker Safety</title>
@@ -27,7 +35,7 @@
                                         <li><a href="#"><div class="colorr"><h4>Orders</h4></div></a></li> -->
                                         <li><a href="#"><div class="colorr"><h4>About</h4></div></a></li></ul>
                                         <ul>
-                                        <li> <button type="button" class="btn btn-light navbar-btn"><h4>Logout</h4></button></li>
+                                        <li> <a href="logout.php"><button type="button" class="btn btn-light navbar-btn" ><h4>Logout</h4></button></a></li>
                                        
                                       </ul>
                                       </div>
