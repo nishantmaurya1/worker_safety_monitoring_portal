@@ -1,6 +1,7 @@
 body {
   background-color: rgb(212, 230, 236) !important;
 }
+
 .navbar-default {
   
   background-color:#054b96;
@@ -13,7 +14,21 @@ body {
 
 
   }
- 
+ .error span
+ {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  transition: 0.28s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+ }
+
+ select {
+  width:100px;
+}
+
   .buttonload
   {
     background-color: #4CAF50; /* Green background */
